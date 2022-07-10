@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta charset="UTF-8">
+       <link rel="stylesheet" type="text/css" href="style.css">
+       <title>Trabalho de administração</title>
+    </head>
+    <body>
+
+       <div class="container">
+           <div class="first--area">
+                <div class="calculation">
+                    <h1 class="calculation--h1">Valor Presente (VP)</h1>
+                    <input type="number" class="vp" placeholder="(R$) Valor Presente">
+                    <input type="number" class="vp" placeholder="(%) Taxa">
+                    <input type="number" class="vp" placeholder="Tempo">
+                    <div class="calculation--buttons--vp">
+                        <button type="button" class="ready">Calcular</button>
+                        <button type="button" class="clean">Limpar</button>
+                    </div>
+                    <div class="calculation--result--vp">
+                        <input type="text" value="454" class="result--vp">
+                    </div>
+                </div>
+                <div class="calculation">
+                    <h1 class="calculation--h1">Valor Futuro (VF)</h1>
+                    <input type="number" class="vf" placeholder="(R$) Valor Futuro">
+
+                    <input type="number" class="vf" placeholder="(%) Taxa">
+
+                    <input type="number" class="vf" placeholder="Tempo">
+                    <div class="calculation--buttons--vp">
+                        <button type="button" class="ready">Calcular</button>
+                        <button type="button" class="clean">Limpar</button>
+                    </div>
+                    <div class="calculation--result--vf">
+                        <input type="text" value="454" class="result--vf">
+                    </div>
+                </div>
+           </div>
+           <div class="second--area">
+                <div class="second--calculation">
+                    <h1 class="calculation--h1">Valor Presente Líquido (VPL)</h1>
+                    <input class="second--calculation--input" type="text" placeholder="Insira Os Valores Ex: -3232;2424;44343">
+                    <input class="second--calculation--input" type="number" placeholder="Insira a Taxa(%)">
+                    <button class="second--button second--ready">Calcular</button>
+                    <button class="second--button second--clean">Limpar</button>
+                    <div class="second--area--result">
+                        <table class="second-table"></table>
+                    </div>
+                </div>
+           </div>
+           <div class="third--area">
+                <div class="third--calculation">
+                    <h1 class="calculation--h1">Taxa Interna de Retorno (TIR)</h1>
+                    <input type="text" class="third-calculation--input" placeholder="Insira Os Valores Ex: -2000;55;66;8787 ">
+                    <div class="third-btn-calculation">
+                        <button class="third-btn-calcular">Calcular</button>
+                        <button class="third-btn-clean">Limpar</button>
+                    </div>
+                    <div class="third-result">
+                        <table class="third-table">
+                           
+                        </table>
+                    </div>
+                </div>
+           </div>
+           <div class="fourth--area">
+                <div class="fourth--calculation">
+                    <h1 class="calculation--h1">Payback</h1>
+                    <input type="text" class="fourth-calculation--input" placeholder="Insira os valores Ex: -2000;4400;44554;5445">
+                    <input type="number" class="fourth-calculation--input" placeholder="Insira a Taxa(%)">
+                    <div class="fourth-btn-calculation">
+                        <button class="fourth-btn-calc">Calcular</button>
+                        <button class="fourth-btn-del">Limpar</button>
+                    </div>
+                    <div class="fourfth-result-area">
+                        <table class="fourfh-result"></table>
+                    </div>
+                </div>
+           </div>
+       </div>
+       <script src="script.js"></script>
+    </body>
+</html>
